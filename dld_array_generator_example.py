@@ -1,7 +1,12 @@
-from dld_generator import DLD_generator
+from dld_array_generator import DLD_Array
 
-filename = "../Python Output/DLD mask 2"
+filename = "DLD example"
 
-g = DLD_generator()
+g = DLD_Array()
+
+# Update channel desired channel parameters
+g.C_D = 10e3 # channel length
+g.C_L = 200 # channel width
+g.C_N = 2 # bend pairs (producing 4 bends in total)
 
 g.generate(filename)

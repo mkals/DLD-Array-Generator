@@ -275,7 +275,7 @@ class DLD_Array:
 
     def generate(self, filename):
 
-        doc, msp = DLD_generator.make_modelspace()
+        doc, msp = DLD_Array.make_modelspace()
 
         # Generate patterns
         dld_array = self.make_dld_block()

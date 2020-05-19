@@ -2,6 +2,10 @@
 
 A package to generate DLD arrays in DXF format. All distances in micrometers, angles in degrees.
 
+The array is parameterized by attributes of the `DLD_Array` class. Initializing an instance sets up an array with default values. Each of the attrbutes (outlined below) can then be set as desired. When the configurtation is complete, call `generate(filename)` to output the array as in a `.dxf` file format.
+
+See example usage in [here](blob/master/dld_array_generator_example.py). 
+
 ## Channel attributes:
     C_D = total channel length
     C_L = channel width
