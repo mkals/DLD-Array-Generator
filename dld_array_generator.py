@@ -3,11 +3,12 @@
 """
 Created on Fri Apr 10 09:40:07 2020
 
-@author: mkals
+@author: Morten Kals
 """
 
 import ezdxf
 import numpy as np
+
 
 class DLD_Array:
     """ A package to generate DLD arrays in DXF format. All distances in micrometers, angles in degrees.
