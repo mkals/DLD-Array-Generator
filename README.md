@@ -4,13 +4,24 @@ A package to generate DLD arrays in DXF format. All distances in micrometers, an
 
 The array is parameterized by attributes of the `DLD_Array` class. Initializing an instance sets up an array with default values. Each of the attrbutes (outlined below) can then be set as desired. When the configurtation is complete, call `generate(filename)` to output the array as in a `.dxf` file format.
 
-See example usage in [here](dld_array_generator_example.py).
-
 ## Installation
 `pip install dld-array-generator`
 
-## Import
-`from dld-array-generator import DLD_Array`
+## Examples Usage
+```
+    from dld_array_generator import DLD_Array
+
+    filename = "DLD example"
+
+    g = DLD_Array()
+
+    # Update channel desired channel parameters
+    g.C_D = 10e3 # channel length
+    g.C_L = 200 # channel width
+    g.C_N = 2 # bend pairs (producing 4 bends in total)
+
+    g.generate(filename)
+```
 
 ## Attributes
 ### Channel attributes:
